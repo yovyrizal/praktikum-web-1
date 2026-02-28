@@ -1,0 +1,95 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root{
+    --primary-color: #ff242e;
+    --secondary-color: #ff552d;
+    --background-color: #323b3f;
+    --background-color-2: #37383c;
+    --background-color: #464646;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: dm mono, monospace;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* === HEADER === */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+header .logo span{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+.navbar a:hover{
+    color: var(--primary-color);
+    transition: 0.1s ease;
+}
+
+header .join-btn{
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header .join-btn:hover{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+/* === MAIN === */
+section{
+    padding: 100px;
+}
+
+main .home{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.home img{
+    width: 50px;
+    object-fit: cover;
+}
