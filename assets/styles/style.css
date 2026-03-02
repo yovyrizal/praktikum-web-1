@@ -252,12 +252,19 @@ header .logo span{
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-.page-landing main a:hover{
+.page-landing main .confirm:hover{
     background-color: var(--background-color);
     color: var(--primary-color);
     transition: 0.3s ease;
+}
+
+.page-landing main .back{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 /*
